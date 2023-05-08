@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+
+  plc-utils:
+    image: plc-utils:latest
+    build:
+      context: plc-utils-build
+    volumes:
+      - ./python-apps:/app
+    working_dir: /app
+
